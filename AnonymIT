@@ -52,17 +52,17 @@ do
               git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Reconnaissance/Blackeye
             cd ~/AnonymIT/Reconnaissance/Blackeye
              chmod +x ./setup.sh
-              sh setup.sh
+              torify sh setup.sh
             
             #Install CardPwn
               git clone https://github.com/itsmehacker/CardPwn.git ~/AnonymIT/Reconnaissance/CardPwn
             cd ~/AnonymIT/Reconnaissance/CardPwn
-              pip3 install -r requirements.txt
+              torify pip3 install -r requirements.txt
             
             #Install CrossLinked
               git clone https://github.com/m8sec/CrossLinked.git ~/AnonymIT/Reconnaissance/CrossLinked
             cd ~/AnonymIT/Reconnaissance/CrossLinked
-              python3 setup.py install
+              torify python3 setup.py install
             
             #Install Evilginx
               git clone https://github.com/kgretzky/evilginx2.git ~/AnonymIT/Reconnaissance/Evilginx
@@ -70,48 +70,48 @@ do
             #Install Fluxion
               git clone https://www.github.com/FluxionNetwork/fluxion.git ~/AnonymIT/Reconnaissance/Fluxion
             cd ~/AnonymIT/Reconnaissance/Fluxion
-              sh ./fluxion.sh
+              torify sh ./fluxion.sh
             
             #Install Maigret
-              pip install aiohttp==3.7.0
+              torify pip install aiohttp==3.7.0
               git clone https://github.com/soxoj/maigret.git ~/AnonymIT/Reconnaissance/Maigret
             cd ~/AnonymIT/Reconnaissance/Maigret
-              pip3 install -r requirements.txt
+              torify pip3 install -r requirements.txt
             
             #Install Sherlock
               git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Reconnaissance/Sherlock
             cd ~/AnonymIT/Reconnaissance/Sherlock
-              python3 -m pip install -r requirements.txt
+              torify python3 -m pip install -r requirements.txt
             
             #Install Social-Analyser
               git clone https://github.com/qeeqbox/social-analyzer.git ~/AnonymIT/Reconnaissance/Social-Analyser
             cd ~/AnonymIT/Reconnaissance/Social-Analyser
-              pip3 install -r requirements.txt
+              torify pip3 install -r requirements.txt
             
             #Install SocialFish
               git clone https://github.com/UndeadSec/SocialFish.git ~/AnonymIT/Reconnaissance/SocialFish
             cd ~/AnonymIT/Reconnaissance/SocialFish
-              python3 -m pip install -r requirements.txt
+              torify python3 -m pip install -r requirements.txt
             
             #Install Trape
               git clone https://github.com/jofpin/trape.git ~/AnonymIT/Reconnaissance/Trape
             cd ~/AnonymIT/Reconnaissance/Trape
-              pip3 install -r requirements.txt
+              torify pip3 install -r requirements.txt
             
             #Install Twitter profile Analyzer
               git clone https://github.com/x0rz/tweets_analyzer.git ~/AnonymIT/Reconnaissance/Twitter-Analyser
             cd ~/AnonymIT/Reconnaissance/Twitter-Analyser
-              pip install -r requirements.txt
+              torify pip install -r requirements.txt
             
             #Install Twint
               git clone --depth=1 https://github.com/twintproject/twint.git ~/AnonymIT/Reconnaissance/Twint
             cd ~/AnonymIT/Reconnaissance/Twint
-              pip3 install . -r requirements.txt
+              torify pip3 install . -r requirements.txt
             
             #Install userrecon
               git clone https://github.com/lucmski/userrecon-py.git ~/AnonymIT/Reconnaissance/userrecon-py
             cd ~/AnonymIT/Reconnaissance/userrecon-py
-             -H pip3 install -r requirements.txt
+              torify -H pip3 install -r requirements.txt
               python3 setup.py build
               python3 setup.py install
             
