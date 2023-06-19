@@ -34,8 +34,8 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Install Python")
-	     apt-get update
-	     apt-get install python3-pip -y
+	     sudo apt-get update
+	     sudo apt-get install python3-pip -y
 	    
 	    #Return terminal to default
             clear
