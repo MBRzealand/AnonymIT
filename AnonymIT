@@ -57,7 +57,7 @@ do
             #Install Sherlock
               git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Initial\ Access/Sherlock
             cd ~/AnonymIT/Initial\ Access/Sherlock
-              python3 -m pip install -r requirements.txt
+              torify python3 -m pip install -r requirements.txt
 
             #Install Blackeye
               git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Initial\ Access/Blackeye
