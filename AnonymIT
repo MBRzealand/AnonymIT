@@ -49,71 +49,71 @@ do
             ;;
         "Install Initial access tools")
             #Install Blackeye
-            sudo torify git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Reconnaissance/Blackeye
+            sudo  git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Reconnaissance/Blackeye
             cd ~/AnonymIT/Reconnaissance/Blackeye
             sudo chmod +x ./setup.sh
-            sudo torify sh setup.sh
+            sudo  sh setup.sh
             
             #Install CardPwn
-            sudo torify git clone https://github.com/itsmehacker/CardPwn.git ~/AnonymIT/Reconnaissance/CardPwn
+            sudo  git clone https://github.com/itsmehacker/CardPwn.git ~/AnonymIT/Reconnaissance/CardPwn
             cd ~/AnonymIT/Reconnaissance/CardPwn
-            sudo torify pip3 install -r requirements.txt
+            sudo  pip3 install -r requirements.txt
             
             #Install CrossLinked
-            sudo torify git clone https://github.com/m8sec/CrossLinked.git ~/AnonymIT/Reconnaissance/CrossLinked
+            sudo  git clone https://github.com/m8sec/CrossLinked.git ~/AnonymIT/Reconnaissance/CrossLinked
             cd ~/AnonymIT/Reconnaissance/CrossLinked
-            sudo torify python3 setup.py install
+            sudo  python3 setup.py install
             
             #Install Evilginx
-            sudo torify git clone https://github.com/kgretzky/evilginx2.git ~/AnonymIT/Reconnaissance/Evilginx
+            sudo  git clone https://github.com/kgretzky/evilginx2.git ~/AnonymIT/Reconnaissance/Evilginx
             
             #Install Fluxion
-            sudo torify git clone https://www.github.com/FluxionNetwork/fluxion.git ~/AnonymIT/Reconnaissance/Fluxion
+            sudo  git clone https://www.github.com/FluxionNetwork/fluxion.git ~/AnonymIT/Reconnaissance/Fluxion
             cd ~/AnonymIT/Reconnaissance/Fluxion
-            sudo torify sh ./fluxion.sh
+            sudo  sh ./fluxion.sh
             
             #Install Maigret
-            sudo torify pip install aiohttp==3.7.0
-            sudo torify git clone https://github.com/soxoj/maigret.git ~/AnonymIT/Reconnaissance/Maigret
+            sudo  pip install aiohttp==3.7.0
+            sudo  git clone https://github.com/soxoj/maigret.git ~/AnonymIT/Reconnaissance/Maigret
             cd ~/AnonymIT/Reconnaissance/Maigret
-            sudo torify pip3 install -r requirements.txt
+            sudo  pip3 install -r requirements.txt
             
             #Install Sherlock
-            sudo torify git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Reconnaissance/Sherlock
+            sudo  git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Reconnaissance/Sherlock
             cd ~/AnonymIT/Reconnaissance/Sherlock
-            sudo torify python3 -m pip install -r requirements.txt
+            sudo  python3 -m pip install -r requirements.txt
             
             #Install Social-Analyser
-            sudo torify git clone https://github.com/qeeqbox/social-analyzer.git ~/AnonymIT/Reconnaissance/Social-Analyser
+            sudo  git clone https://github.com/qeeqbox/social-analyzer.git ~/AnonymIT/Reconnaissance/Social-Analyser
             cd ~/AnonymIT/Reconnaissance/Social-Analyser
-            sudo torify pip3 install -r requirements.txt
+            sudo  pip3 install -r requirements.txt
             
             #Install SocialFish
-            sudo torify git clone https://github.com/UndeadSec/SocialFish.git ~/AnonymIT/Reconnaissance/SocialFish
+            sudo  git clone https://github.com/UndeadSec/SocialFish.git ~/AnonymIT/Reconnaissance/SocialFish
             cd ~/AnonymIT/Reconnaissance/SocialFish
-            sudo torify python3 -m pip install -r requirements.txt
+            sudo  python3 -m pip install -r requirements.txt
             
             #Install Trape
-            sudo torify git clone https://github.com/jofpin/trape.git ~/AnonymIT/Reconnaissance/Trape
+            sudo  git clone https://github.com/jofpin/trape.git ~/AnonymIT/Reconnaissance/Trape
             cd ~/AnonymIT/Reconnaissance/Trape
-            sudo torify pip3 install -r requirements.txt
+            sudo  pip3 install -r requirements.txt
             
             #Install Twitter profile Analyzer
-            sudo torify git clone https://github.com/x0rz/tweets_analyzer.git ~/AnonymIT/Reconnaissance/Twitter-Analyser
+            sudo  git clone https://github.com/x0rz/tweets_analyzer.git ~/AnonymIT/Reconnaissance/Twitter-Analyser
             cd ~/AnonymIT/Reconnaissance/Twitter-Analyser
-            sudo torify pip install -r requirements.txt
+            sudo  pip install -r requirements.txt
             
             #Install Twint
-            sudo torify git clone --depth=1 https://github.com/twintproject/twint.git ~/AnonymIT/Reconnaissance/Twint
+            sudo  git clone --depth=1 https://github.com/twintproject/twint.git ~/AnonymIT/Reconnaissance/Twint
             cd ~/AnonymIT/Reconnaissance/Twint
-            sudo torify pip3 install . -r requirements.txt
+            sudo  pip3 install . -r requirements.txt
             
             #Install userrecon
-            sudo torify git clone https://github.com/lucmski/userrecon-py.git ~/AnonymIT/Reconnaissance/userrecon-py
+            sudo  git clone https://github.com/lucmski/userrecon-py.git ~/AnonymIT/Reconnaissance/userrecon-py
             cd ~/AnonymIT/Reconnaissance/userrecon-py
             sudo -H pip3 install -r requirements.txt
-            sudo torify python3 setup.py build
-            sudo torify python3 setup.py install
+            sudo  python3 setup.py build
+            sudo  python3 setup.py install
             
             #Return terminal to default
             clear
