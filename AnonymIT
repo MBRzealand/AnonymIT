@@ -57,7 +57,7 @@ do
             #Install Sherlock
               git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Initial\ Access/Sherlock
             cd ~/AnonymIT/Initial\ Access/Sherlock
-              torify python3 -m pip install -r requirements.txt
+              python3 -m pip install -r requirements.txt
 
             #Install Blackeye
               git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Initial\ Access/Blackeye
@@ -92,7 +92,7 @@ do
             #Install SocialFish
               git clone https://github.com/UndeadSec/SocialFish.git ~/AnonymIT/Initial\ Access/SocialFish
             cd ~/AnonymIT/Initial\ Access/SocialFish
-              torify python3 -m pip install -r requirements.txt
+              python3 -m pip install -r requirements.txt
             
             #Install Trape
               git clone https://github.com/jofpin/trape.git ~/AnonymIT/Initial\ Access/Trape
