@@ -34,8 +34,8 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Install Python")
-	    sudo apt-get update
-	    sudo apt-get install python3 python3-pip python3-dev -y
+	     apt-get update
+	     apt-get install python3 python3-pip python3-dev -y
 	    
 	    #Return terminal to default
             clear
@@ -49,71 +49,71 @@ do
             ;;
         "Install Initial access tools")
             #Install Blackeye
-            sudo  git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Reconnaissance/Blackeye
+              git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Reconnaissance/Blackeye
             cd ~/AnonymIT/Reconnaissance/Blackeye
-            sudo chmod +x ./setup.sh
-            sudo  sh setup.sh
+             chmod +x ./setup.sh
+              sh setup.sh
             
             #Install CardPwn
-            sudo  git clone https://github.com/itsmehacker/CardPwn.git ~/AnonymIT/Reconnaissance/CardPwn
+              git clone https://github.com/itsmehacker/CardPwn.git ~/AnonymIT/Reconnaissance/CardPwn
             cd ~/AnonymIT/Reconnaissance/CardPwn
-            sudo  pip3 install -r requirements.txt
+              pip3 install -r requirements.txt
             
             #Install CrossLinked
-            sudo  git clone https://github.com/m8sec/CrossLinked.git ~/AnonymIT/Reconnaissance/CrossLinked
+              git clone https://github.com/m8sec/CrossLinked.git ~/AnonymIT/Reconnaissance/CrossLinked
             cd ~/AnonymIT/Reconnaissance/CrossLinked
-            sudo  python3 setup.py install
+              python3 setup.py install
             
             #Install Evilginx
-            sudo  git clone https://github.com/kgretzky/evilginx2.git ~/AnonymIT/Reconnaissance/Evilginx
+              git clone https://github.com/kgretzky/evilginx2.git ~/AnonymIT/Reconnaissance/Evilginx
             
             #Install Fluxion
-            sudo  git clone https://www.github.com/FluxionNetwork/fluxion.git ~/AnonymIT/Reconnaissance/Fluxion
+              git clone https://www.github.com/FluxionNetwork/fluxion.git ~/AnonymIT/Reconnaissance/Fluxion
             cd ~/AnonymIT/Reconnaissance/Fluxion
-            sudo  sh ./fluxion.sh
+              sh ./fluxion.sh
             
             #Install Maigret
-            sudo  pip install aiohttp==3.7.0
-            sudo  git clone https://github.com/soxoj/maigret.git ~/AnonymIT/Reconnaissance/Maigret
+              pip install aiohttp==3.7.0
+              git clone https://github.com/soxoj/maigret.git ~/AnonymIT/Reconnaissance/Maigret
             cd ~/AnonymIT/Reconnaissance/Maigret
-            sudo  pip3 install -r requirements.txt
+              pip3 install -r requirements.txt
             
             #Install Sherlock
-            sudo  git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Reconnaissance/Sherlock
+              git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Reconnaissance/Sherlock
             cd ~/AnonymIT/Reconnaissance/Sherlock
-            sudo  python3 -m pip install -r requirements.txt
+              python3 -m pip install -r requirements.txt
             
             #Install Social-Analyser
-            sudo  git clone https://github.com/qeeqbox/social-analyzer.git ~/AnonymIT/Reconnaissance/Social-Analyser
+              git clone https://github.com/qeeqbox/social-analyzer.git ~/AnonymIT/Reconnaissance/Social-Analyser
             cd ~/AnonymIT/Reconnaissance/Social-Analyser
-            sudo  pip3 install -r requirements.txt
+              pip3 install -r requirements.txt
             
             #Install SocialFish
-            sudo  git clone https://github.com/UndeadSec/SocialFish.git ~/AnonymIT/Reconnaissance/SocialFish
+              git clone https://github.com/UndeadSec/SocialFish.git ~/AnonymIT/Reconnaissance/SocialFish
             cd ~/AnonymIT/Reconnaissance/SocialFish
-            sudo  python3 -m pip install -r requirements.txt
+              python3 -m pip install -r requirements.txt
             
             #Install Trape
-            sudo  git clone https://github.com/jofpin/trape.git ~/AnonymIT/Reconnaissance/Trape
+              git clone https://github.com/jofpin/trape.git ~/AnonymIT/Reconnaissance/Trape
             cd ~/AnonymIT/Reconnaissance/Trape
-            sudo  pip3 install -r requirements.txt
+              pip3 install -r requirements.txt
             
             #Install Twitter profile Analyzer
-            sudo  git clone https://github.com/x0rz/tweets_analyzer.git ~/AnonymIT/Reconnaissance/Twitter-Analyser
+              git clone https://github.com/x0rz/tweets_analyzer.git ~/AnonymIT/Reconnaissance/Twitter-Analyser
             cd ~/AnonymIT/Reconnaissance/Twitter-Analyser
-            sudo  pip install -r requirements.txt
+              pip install -r requirements.txt
             
             #Install Twint
-            sudo  git clone --depth=1 https://github.com/twintproject/twint.git ~/AnonymIT/Reconnaissance/Twint
+              git clone --depth=1 https://github.com/twintproject/twint.git ~/AnonymIT/Reconnaissance/Twint
             cd ~/AnonymIT/Reconnaissance/Twint
-            sudo  pip3 install . -r requirements.txt
+              pip3 install . -r requirements.txt
             
             #Install userrecon
-            sudo  git clone https://github.com/lucmski/userrecon-py.git ~/AnonymIT/Reconnaissance/userrecon-py
+              git clone https://github.com/lucmski/userrecon-py.git ~/AnonymIT/Reconnaissance/userrecon-py
             cd ~/AnonymIT/Reconnaissance/userrecon-py
-            sudo -H pip3 install -r requirements.txt
-            sudo  python3 setup.py build
-            sudo  python3 setup.py install
+             -H pip3 install -r requirements.txt
+              python3 setup.py build
+              python3 setup.py install
             
             #Return terminal to default
             clear
