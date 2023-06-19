@@ -50,68 +50,68 @@ do
         "Install Initial access tools")
 
             #Install CardPwn
-              git clone https://github.com/itsmehacker/CardPwn.git ~/AnonymIT/Initial Access/CardPwn
-            cd ~/AnonymIT/Initial Access/CardPwn
+              git clone https://github.com/itsmehacker/CardPwn.git ~/AnonymIT/Initial\ Access/CardPwn
+            cd ~/AnonymIT/Initial\ Access/CardPwn
               torify pip3 install -r requirements.txt
 
             #Install Sherlock
-              git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Initial Access/Sherlock
-            cd ~/AnonymIT/Initial Access/Sherlock
+              git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Initial\ Access/Sherlock
+            cd ~/AnonymIT/Initial\ Access/Sherlock
               torify python3 -m pip install -r requirements.txt
 
             #Install Blackeye
-              git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Initial Access/Blackeye
-            cd ~/AnonymIT/Initial Access/Blackeye
+              git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Initial\ Access/Blackeye
+            cd ~/AnonymIT/Initial\ Access/Blackeye
              chmod +x ./setup.sh
               torify sh setup.sh
             
             #Install CrossLinked
-              git clone https://github.com/m8sec/CrossLinked.git ~/AnonymIT/Initial Access/CrossLinked
-            cd ~/AnonymIT/Initial Access/CrossLinked
+              git clone https://github.com/m8sec/CrossLinked.git ~/AnonymIT/Initial\ Access/CrossLinked
+            cd ~/AnonymIT/Initial\ Access/CrossLinked
               torify python3 setup.py install
             
             #Install Evilginx
-              git clone https://github.com/kgretzky/evilginx2.git ~/AnonymIT/Initial Access/Evilginx
+              git clone https://github.com/kgretzky/evilginx2.git ~/AnonymIT/Initial\ Access/Evilginx
             
             #Install Fluxion
-              git clone https://www.github.com/FluxionNetwork/fluxion.git ~/AnonymIT/Initial Access/Fluxion
-            cd ~/AnonymIT/Initial Access/Fluxion
+              git clone https://www.github.com/FluxionNetwork/fluxion.git ~/AnonymIT/Initial\ Access/Fluxion
+            cd ~/AnonymIT/Initial\ Access/Fluxion
               torify sh ./fluxion.sh
             
             #Install Maigret
               torify pip install aiohttp==3.7.0
-              git clone https://github.com/soxoj/maigret.git ~/AnonymIT/Initial Access/Maigret
-            cd ~/AnonymIT/Initial Access/Maigret
+              git clone https://github.com/soxoj/maigret.git ~/AnonymIT/Initial\ Access/Maigret
+            cd ~/AnonymIT/Initial\ Access/Maigret
               torify pip3 install -r requirements.txt
             
             #Install Social-Analyser
-              git clone https://github.com/qeeqbox/social-analyzer.git ~/AnonymIT/Initial Access/Social-Analyser
-            cd ~/AnonymIT/Initial Access/Social-Analyser
+              git clone https://github.com/qeeqbox/social-analyzer.git ~/AnonymIT/Initial\ Access/Social-Analyser
+            cd ~/AnonymIT/Initial\ Access/Social-Analyser
               torify pip3 install -r requirements.txt
             
             #Install SocialFish
-              git clone https://github.com/UndeadSec/SocialFish.git ~/AnonymIT/Initial Access/SocialFish
-            cd ~/AnonymIT/Initial Access/SocialFish
+              git clone https://github.com/UndeadSec/SocialFish.git ~/AnonymIT/Initial\ Access/SocialFish
+            cd ~/AnonymIT/Initial\ Access/SocialFish
               torify python3 -m pip install -r requirements.txt
             
             #Install Trape
-              git clone https://github.com/jofpin/trape.git ~/AnonymIT/Initial Access/Trape
-            cd ~/AnonymIT/Initial Access/Trape
+              git clone https://github.com/jofpin/trape.git ~/AnonymIT/Initial\ Access/Trape
+            cd ~/AnonymIT/Initial\ Access/Trape
               torify pip3 install -r requirements.txt
             
             #Install Twitter profile Analyzer
-              git clone https://github.com/x0rz/tweets_analyzer.git ~/AnonymIT/Initial Access/Twitter-Analyser
-            cd ~/AnonymIT/Initial Access/Twitter-Analyser
+              git clone https://github.com/x0rz/tweets_analyzer.git ~/AnonymIT/Initial\ Access/Twitter-Analyser
+            cd ~/AnonymIT/Initial\ Access/Twitter-Analyser
               torify pip install -r requirements.txt
             
             #Install Twint
-              git clone --depth=1 https://github.com/twintproject/twint.git ~/AnonymIT/Initial Access/Twint
-            cd ~/AnonymIT/Initial Access/Twint
+              git clone --depth=1 https://github.com/twintproject/twint.git ~/AnonymIT/Initial\ Access/Twint
+            cd ~/AnonymIT/Initial\ Access/Twint
               torify pip3 install . -r requirements.txt
             
             #Install userrecon
-              git clone https://github.com/lucmski/userrecon-py.git ~/AnonymIT/Initial Access/userrecon-py
-            cd ~/AnonymIT/Initial Access/userrecon-py
+              git clone https://github.com/lucmski/userrecon-py.git ~/AnonymIT/Initial\ Access/userrecon-py
+            cd ~/AnonymIT/Initial\ Access/userrecon-py
               torify -H pip3 install -r requirements.txt
               python3 setup.py build
               python3 setup.py install
