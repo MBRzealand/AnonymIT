@@ -35,7 +35,7 @@ do
     case $opt in
         "Install Python")
 	     apt-get update
-	     apt-get install python3 python3-pip python3-dev -y
+	     apt-get install python3-pip -y
 	    
 	    #Return terminal to default
             clear
