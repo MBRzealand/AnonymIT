@@ -1,0 +1,133 @@
+#!/bin/bash
+
+clear
+cd ~
+
+RED='\033[0;31m'
+NC='\033[0m'
+COLUMNS=12
+
+print_header () {
+echo -e "    ___                                      ${RED}__________${NC}";
+echo -e "   /   |  ____  ____  ____  __  ______ ___  ${RED}/  _/_  __/${NC}";
+echo -e "  / /| | / __ \/ __ \/ __ \/ / / / __ \`__ \ ${RED}/ /  / /${NC}   ";
+echo -e " / ___ |/ / / / /_/ / / / / /_/ / / / / / /${RED}/ /  / /${NC}    ";
+echo -e "/_/  |_/_/ /_/\____/_/ /_/\__, /_/ /_/ /_/${RED}___/ /_/${NC}     ";
+echo "                         /____/                        ";
+echo "";
+}
+
+print_menu () {
+echo "1) Install Python"
+echo "2) Install Reconnaissance tools"
+echo "3) Install Initial access tools"
+echo "4) Install Impact tools"
+echo "5) Quit"
+}
+
+
+print_header
+PS3='
+Install tools: '
+options=("Install Python" "Install Reconnaissance tools" "Install Initial access tools" "Install Impact tools" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Install Python")
+	    sudo apt-get update
+	    sudo apt-get install python3 python3-pip python3-dev -y
+	    
+	    #Return terminal to default
+            clear
+            print_header
+            echo "Tools sucessfully installed. Install other tools or quit:
+            "
+            print_menu
+	    ;;
+	    
+	"Install Reconnaissance tools")
+            ;;
+        "Install Initial access tools")
+            #Install Blackeye
+            sudo torify git clone https://github.com/thewickedkarma/blackeye-im.git ~/AnonymIT/Reconnaissance/Blackeye
+            cd ~/AnonymIT/Reconnaissance/Blackeye
+            sudo chmod +x ./setup.sh
+            sudo torify sh setup.sh
+            
+            #Install CardPwn
+            sudo torify git clone https://github.com/itsmehacker/CardPwn.git ~/AnonymIT/Reconnaissance/CardPwn
+            cd ~/AnonymIT/Reconnaissance/CardPwn
+            sudo torify pip3 install -r requirements.txt
+            
+            #Install CrossLinked
+            sudo torify git clone https://github.com/m8sec/CrossLinked.git ~/AnonymIT/Reconnaissance/CrossLinked
+            cd ~/AnonymIT/Reconnaissance/CrossLinked
+            sudo torify python3 setup.py install
+            
+            #Install Evilginx
+            sudo torify git clone https://github.com/kgretzky/evilginx2.git ~/AnonymIT/Reconnaissance/Evilginx
+            
+            #Install Fluxion
+            sudo torify git clone https://www.github.com/FluxionNetwork/fluxion.git ~/AnonymIT/Reconnaissance/Fluxion
+            cd ~/AnonymIT/Reconnaissance/Fluxion
+            sudo torify sh ./fluxion.sh
+            
+            #Install Maigret
+            sudo torify pip install aiohttp==3.7.0
+            sudo torify git clone https://github.com/soxoj/maigret.git ~/AnonymIT/Reconnaissance/Maigret
+            cd ~/AnonymIT/Reconnaissance/Maigret
+            sudo torify pip3 install -r requirements.txt
+            
+            #Install Sherlock
+            sudo torify git clone https://github.com/sherlock-project/sherlock.git ~/AnonymIT/Reconnaissance/Sherlock
+            cd ~/AnonymIT/Reconnaissance/Sherlock
+            sudo torify python3 -m pip install -r requirements.txt
+            
+            #Install Social-Analyser
+            sudo torify git clone https://github.com/qeeqbox/social-analyzer.git ~/AnonymIT/Reconnaissance/Social-Analyser
+            cd ~/AnonymIT/Reconnaissance/Social-Analyser
+            sudo torify pip3 install -r requirements.txt
+            
+            #Install SocialFish
+            sudo torify git clone https://github.com/UndeadSec/SocialFish.git ~/AnonymIT/Reconnaissance/SocialFish
+            cd ~/AnonymIT/Reconnaissance/SocialFish
+            sudo torify python3 -m pip install -r requirements.txt
+            
+            #Install Trape
+            sudo torify git clone https://github.com/jofpin/trape.git ~/AnonymIT/Reconnaissance/Trape
+            cd ~/AnonymIT/Reconnaissance/Trape
+            sudo torify pip3 install -r requirements.txt
+            
+            #Install Twitter profile Analyzer
+            sudo torify git clone https://github.com/x0rz/tweets_analyzer.git ~/AnonymIT/Reconnaissance/Twitter-Analyser
+            cd ~/AnonymIT/Reconnaissance/Twitter-Analyser
+            sudo torify pip install -r requirements.txt
+            
+            #Install Twint
+            sudo torify git clone --depth=1 https://github.com/twintproject/twint.git ~/AnonymIT/Reconnaissance/Twint
+            cd ~/AnonymIT/Reconnaissance/Twint
+            sudo torify pip3 install . -r requirements.txt
+            
+            #Install userrecon
+            sudo torify git clone https://github.com/lucmski/userrecon-py.git ~/AnonymIT/Reconnaissance/userrecon-py
+            cd ~/AnonymIT/Reconnaissance/userrecon-py
+            sudo -H pip3 install -r requirements.txt
+            sudo torify python3 setup.py build
+            sudo torify python3 setup.py install
+            
+            #Return terminal to default
+            clear
+            print_header
+            echo "Tools sucessfully installed. Install other tools or quit:
+            "
+            print_menu
+            ;;
+        "Install Impact tools")
+            echo "you chose choice $REPLY which is $opt"
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
